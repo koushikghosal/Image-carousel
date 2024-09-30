@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.carousel {
+    position: relative;
+    width: 80%; /* Adjust to fit the laptop screen */
+    max-width: 800px; /* Max width for larger screens */
+    overflow: hidden;
+    margin: auto;
+    border: 2px solid #ccc; /* Optional: add a border */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    display: block;
+    border-radius: 10px; /* Match with the carousel border */
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 20px; /* Wider buttons for better click area */
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px; /* Rounded buttons */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
